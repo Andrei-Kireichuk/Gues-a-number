@@ -20,7 +20,7 @@ function compare() {
   else if (x == val) {
     document.getElementById("result").innerHTML = 'Угадали';
   }
-  document.querySelector("#num").focus().select();
+  document.querySelector("#num").select();
 }
 document.querySelector('.input-num').onkeypress = function(){
   if (event.key == 'Enter') {
