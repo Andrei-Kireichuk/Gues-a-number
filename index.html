@@ -11,9 +11,9 @@
 </head>
 <body onload="allReset();" class="body">
     <div class="container">
-    <h1>Угадайте число</h1>
+    <h1>Угадайте число от 1 до 100</h1>
     <div class="gues-container">
-<input class="input-num" id="num"  type="text">
+<input class="input-num" id="num"  type="text" onfocus="this.selectText()">
 <button class="button" value=""  type="button" id="butt" onclick="compare()" >Попытка</button></div>
 <div id="result" class="res">Результат</div>
 

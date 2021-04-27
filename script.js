@@ -1,7 +1,8 @@
+
 var x;
 function allReset(){
-x = Math.random() * (100-1) + 1;
-x = Math.floor(x);
+x = Math.floor(Math.random() * (100-1) + 1);
+
 
 document.getElementById("num").value = '';
 document.getElementById("result").innerHTML = 'Результат';
@@ -19,10 +20,15 @@ function compare() {
   else if (x == val) {
     document.getElementById("result").innerHTML = 'Угадали';
   }
+  document.querySelector("#num").focus().select();
 }
 document.querySelector('.input-num').onkeypress = function(){
   if (event.key == 'Enter') {
-    compare()
+    compare();
+    
   }
 }
+
+
+
 
